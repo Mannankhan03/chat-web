@@ -32,11 +32,11 @@ const onSubmitHandler = (e) => {
 
       {/* left */}
 
-<img src={assets.logo_big} alt="" className='w-[min(30vw,250px)]' />
+<img src={assets.logo_big1} alt="" className='w-[min(30vw,250px)]' />
 
 {/* right */}
 
-<form onSubmit={onSubmitHandler} className='border-2 h-[530px] w-[370px] bg-white/8 text-black border-gray-600 p-6 flex flex-col gap-6 rounded-lg shadow-lg'>
+<form onSubmit={onSubmitHandler} className='border-2 h-[450px] w-[370px] bg-white/8 text-black border-gray-600 p-6 flex flex-col gap-6 rounded-lg shadow-lg'>
 <h2 className='font-medium text-2xl flex justify-between items-center'>
   {currentState}
   {isDataSubmitted &&  <img onClick={()=>SetisDatasubmitted(false)} src={assets.arrow_icon} alt="" className='w-5 cursor-pointer'/> }
@@ -62,7 +62,7 @@ const onSubmitHandler = (e) => {
   )
 }
 
-<button className='py-3 bg-gradient-to-r from-purple-400 to-violet-600 text-white rounded-md cursor-pointer'>
+<button className='py-3 bg-gradient-to-r from-orange-900 to-red-900 text-white rounded-md cursor-pointer'>
   {currentState === "Sign Up" ? "Create Account" : "Login Now" }
 </button>
 
@@ -74,7 +74,7 @@ const onSubmitHandler = (e) => {
 <div className='flex flex-col gap-2'>
   {
     currentState === "Sign Up" ? (
-    <p className='text-sm text-gray-600'> Already have an account <span className="font-medium text-violet-500 cursor-pointer" onClick={()=>{SetcurrentState("Login"); SetisDatasubmitted(false)}}>Login here</span></p>
+    <p className='text-sm text-gray-600'> Already have an account <span className="font-medium text-red-900 cursor-pointer" onClick={()=>{SetcurrentState("Login"); SetisDatasubmitted(false)}}>Login here</span></p>
     ) : (
      <p className='text-sm text-gray-600'>Create an Account <span onClick={()=>SetcurrentState("Sign Up")}className='font-medium text-violet-500 cursor-pointer'>Click Here</span></p>
     )

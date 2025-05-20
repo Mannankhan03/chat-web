@@ -37,7 +37,7 @@ const Sidebar = () => {
       {/* Header with Logo and Menu */}
       <div className="pb-5">
         <div className="flex justify-between items-center">
-          <img src={assets.logo_big1} alt="logo-icon" className="max-w-10 mix-blend-normal mix-blend-multiply object-contain" />
+          <img src={assets.logo} alt="logo-icon" className="max-w-15 mix-blend-normal mix-blend-multiply object-contain" />
           <div className="relative py-2 group">
             <img
               src={assets.menu_icon}

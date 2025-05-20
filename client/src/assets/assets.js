@@ -21,8 +21,8 @@ import pic3 from './pic3.png'
 import pic4 from './pic4.png'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
-import logo_big1 from "./logo_big.jpg"
-import logo_main from "./logo.jpg"
+import logo_big1 from "./logo_big.png"
+import logo_main from "./logo.png"
 
 
 const assets = {

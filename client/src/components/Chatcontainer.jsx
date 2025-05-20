@@ -56,7 +56,7 @@ const handleSendImage = async (e) => {
   }, [messages]);
 
   return selectedUser ? (
-    <div className="h-full w-[700px] overflow-scroll p-5 relative backdrop-blur-lg ">
+    <div className="h-full w-[600px] overflow-scroll p-5 relative backdrop-blur-lg ">
       <div className="flex items-center gap-3 py-3 mx-4 border-b border-stone-900">
         <img
           src={selectedUser.profilePic || assets.avatar_icon}
@@ -96,7 +96,7 @@ const handleSendImage = async (e) => {
               />
             ) : (
               <p
-                className={`max-w-[200px] p-2 md:text-sm font-light rounded-lg mb-8 break-all bg-violet-500/30 text-black ${
+                className={`max-w-[200px] p-2 md:text-sm font-light rounded-lg mb-8 break-all bg-orange-500/30 text-black ${
                   msg.senderId === authuser._id
                     ? "rounded-br-none"
                     : "rounded-bl-none"
@@ -153,13 +153,13 @@ const handleSendImage = async (e) => {
           onClick={handleSendMessage}
           src={assets.send_button}
           alt=""
-          className="w-7 cursor-pointer"
+          className="w-7  cursor-pointer"
         />
       </div>
     </div>
   ) : (
     <div className="flex flex-col items-center justify-center gap-2 text-gray-500 bg-white/10 max-md:hidden">
-      <img src={assets.logo_icon} className="max-w-16 object-contain" alt="" />
+      <img src={assets.logo_big1} className="max-w-50 object-contain" alt="" />
       <p className="text-lg font-medium text-black">chat anytime, Anywhere</p>
     </div>
   );
