@@ -5,13 +5,14 @@ import LoginPage from "./Pages/LoginPage";
 import ProfilePage from "./Pages/ProfilePage";
 import { Toaster } from "react-hot-toast";
 import { AuthContext } from "../context/AuthContext";
+import "./App.css"
 
 const Homepage = lazy(() => import("./Pages/Homepage"));
 
 const App = () => {
   const { authuser } = useContext(AuthContext);
   return (
-    <div className="bg-[url('./src/assets/bg-image.jpg')] bg-contain bg-cover">
+    <div className=" bg-contain bg-cover">
        
       <Toaster />
      
