@@ -12,6 +12,7 @@ const App = () => {
   const { authuser } = useContext(AuthContext);
   return (
     <div className="bg-[url('./src/assets/bg-image.jpg')] bg-contain bg-cover">
+       
       <Toaster />
      
        <Suspense fallback={<div>Loading...</div>}>

@@ -23,6 +23,7 @@ import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import logo_big1 from "./logo_big.png"
 import logo_main from "./logo.png"
+import bg_image from "./bg-image.jpg"
 
 
 const assets = {
@@ -40,7 +41,8 @@ const assets = {
     bgImage,
     profile_martin,
     logo_big1,
-    logo_main
+    logo_main,
+    bg_image
 }
 
 export default assets;
